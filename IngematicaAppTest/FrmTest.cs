@@ -85,7 +85,7 @@ namespace IngematicaAppTest
                 var selectedLocalidad = (LocalidadModel)cbLocalidadDestino.SelectedItem;
                 int idLocalidad = selectedLocalidad.IdLocalidad;
 
-                bool porRuta = ((EleccionViaModel)cbEleccionVia.SelectedItem).Nombre == "Ruta";
+                bool porRuta = ((EleccionViaModel)cbEleccionVia.SelectedItem).Camino;
 
                 CalculoService calculosService = new CalculoService();
                 DateTime fechaLlegada = calculosService.CalcularFechaLlegada(fechaPartida, idLocalidad, idTipoTransporte, porRuta);

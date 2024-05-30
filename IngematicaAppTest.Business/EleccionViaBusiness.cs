@@ -26,8 +26,8 @@ namespace IngematicaAppTest.Business
         private static List<EleccionViaModel> SetList()
         {
             List<EleccionViaModel> lista = new List<EleccionViaModel>();
-            lista.Add(new EleccionViaModel { IdEleccionVia = 1, Camino = true, Nombre = "POR AUTOPISTA"});
-            lista.Add(new EleccionViaModel { IdEleccionVia = 2, Camino = false, Nombre = "POR RUTA"});
+            lista.Add(new EleccionViaModel { IdEleccionVia = 1, Camino = false, Nombre = "POR AUTOPISTA"});
+            lista.Add(new EleccionViaModel { IdEleccionVia = 2, Camino = true, Nombre = "POR RUTA"});
             return lista;
         }
     }
